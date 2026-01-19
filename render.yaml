@@ -1,0 +1,9 @@
+services:
+  - type: web
+    name: smart-flow-traffic-management
+    env: static
+    buildCommand: npm install && npm run build
+    staticPublishPath: ./dist
+    envVars:
+      - key: GEMINI_API_KEY
+        value: AIzaSyAvhlUeVHiKNvakxLm6b3V6sNAykUBeVMw
